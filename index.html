@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Rachel Melisa ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffebee 0%, #f8bbd0 100%);
+            font-family: 'Playfair Display', serif;
+            color: #4a2c2a;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            color: #c2185b;
+            margin: 0;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            color: #ad1457;
+            margin: 15px 0 30px;
+        }
+        
+        .poema {
+            background: rgba(255,255,255,0.9);
+            border-radius: 25px;
+            padding: 40px;
+            margin: 35px auto;
+            max-width: 720px;
+            box-shadow: 0 15px 35px rgba(194, 24, 91, 0.2);
+            border: 3px solid #f8bbd0;
+            position: relative;
+        }
+        
+        .poema::before {
+            content: '🌍❤️';
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+        }
+        
+        .poema h2 {
+            color: #c2185b;
+            font-size: 2.2rem;
+            margin-top: 0;
+        }
+        
+        .poema p {
+            font-size: 1.38rem;
+            line-height: 1.9;
+            text-align: left;
+            white-space: pre-line;
+        }
+        
+        .distancia {
+            background: #fce4ec;
+            border: 2px dashed #e91e63;
+        }
+        
+        footer {
+            margin-top: 80px;
+            font-size: 1.45rem;
+            color: #ad1457;
+        }
+        
+        .flores { font-size: 3rem; margin: 25px 0; }
+        
+        .nombre {
+            color: #e91e63;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mi Rachel Melisa</h1>
+            <p class="subtitle">Aunque la distancia nos separe hoy,<br>mi corazón late solo para ti ❤️</p>
+            <div class="flores">🌹🌸💕🌺</div>
+        </header>
+        
+        <div class="poema">
+            <h2>Para ti, Rachel Melisa</h2>
+            <p>Rachel Melisa, mi amor,
+aunque estemos lejos, te siento tan cerca.
+Cada mensaje tuyo ilumina mi día,
+cada "te extraño" tuya me hace sonreír.</p>
+        </div>
+        
+        <div class="poema distancia">
+            <h2>Te extraño tanto</h2>
+            <p>Extraño tu risa, tu voz, tu mirada.
+Extraño abrazarte y no soltarte nunca.
+Pero sé que esta distancia es temporal,
+porque nuestro amor es más grande que cualquier mapa.</p>
+        </div>
+        
+        <div class="poema">
+            <h2>Mi promesa</h2>
+            <p>Rachel Melisa, te prometo que cada día
+trabajo para acortar esta distancia.
+Mientras tanto, te envío todos mis besos,
+todos mis abrazos y todo mi amor infinito.</p>
+        </div>
+        
+        <div class="poema">
+            <h2>Contando los días</h2>
+            <p>Cada noche miro el cielo y pienso en ti.
+Cada mañana me despierto agradecido
+de tener a la mujer más increíble del mundo:
+a ti, mi Rachel Melisa.</p>
+        </div>
+        
+        <footer>
+            <p>La distancia es solo geografía,<br>
+nuestro amor es para siempre ❤️</p>
+            <p>— Tu novio que te ama con todo el alma</p>
+            <div class="flores">🌍💕🌹 Rachel Melisa 🌹</div>
+        </footer>
+    </div>
+    
+    <script>
+        // Corazones flotando
+        function crearCorazon() {
+            const corazon = document.createElement('div');
+            corazon.textContent = ['❤️', '💖', '💗', '💘'][Math.floor(Math.random()*4)];
+            corazon.style.position = 'fixed';
+            corazon.style.left = Math.random() * 100 + 'vw';
+            corazon.style.bottom = '-50px';
+            corazon.style.fontSize = Math.random() * 35 + 25 + 'px';
+            corazon.style.opacity = Math.random() * 0.7 + 0.5;
+            corazon.style.zIndex = '1000';
+            corazon.style.transition = 'all 14s linear';
+            document.body.appendChild(corazon);
+            
+            setTimeout(() => {
+                corazon.style.transform = `translateY(-\( {window.innerHeight + 150}px) rotate( \){Math.random()*720}deg)`;
+            }, 100);
+            
+            setTimeout(() => corazon.remove(), 16000);
+        }
+        
+        setInterval(crearCorazon, 420);
+    </script>
+</body>
+</html>
